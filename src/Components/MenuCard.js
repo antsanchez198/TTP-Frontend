@@ -38,7 +38,7 @@ export default function MenuCard({ item }) {
 
   return (
       <div id={item.f_id} class="card">
-        <div class="container">
+        {/* <div class="container">
           <h4 className="cardItem">{item.f_name}</h4>
           <p className="cardItem">{item.f_desc}</p>
           <p className="inner cardItem bottom">{item.f_price}</p>
@@ -48,7 +48,7 @@ export default function MenuCard({ item }) {
           >
             {inCart ? " Added" : " To Cart"}
           </button>
-      </div>
+      </div> */}
     </div>
   );
 }

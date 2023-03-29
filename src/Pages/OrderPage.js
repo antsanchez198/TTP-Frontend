@@ -30,8 +30,8 @@ export default function OrderPage() {
 
   return (
     <div className="order-page container">
-      <SideMenu  allFoods = {foodItems} setType = {setType} foodType = {type}/>
-      <MenuItems allFoods = {foodItems} />
+      {/* <SideMenu  allFoods = {foodItems} setType = {setType} foodType = {type}/>
+      <MenuItems allFoods = {foodItems} /> */}
     </div>
   );
 }

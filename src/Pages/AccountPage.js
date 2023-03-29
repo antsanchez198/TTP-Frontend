@@ -105,7 +105,7 @@ export default function AccountPage(props) {
     return (
         <body className="form-section">
             <div className="form-container flex column center">
-                <div className='fc-header'>
+                {/* <div className='fc-header'>
                     <h1>Login</h1>
                     {hasAccount ? <h6>Don't Have an Account? <a className="registerHere" onClick={() => setHasAccount(!hasAccount)}>Sign Up</a></h6> : <h6>Already have an Account?<a className="registerHere" onClick={() => setHasAccount(!hasAccount)}>Log In</a></h6>}
                 </div>
@@ -115,7 +115,7 @@ export default function AccountPage(props) {
                         <input placeholder="Email" className="inputBox" onChange={onchangeEmail}></input>
                         <input type="password" placeholder="Password" className="inputBox" onChange={onchangePassword}></input>
                 </div>
-                <button className="btn btn-warning" onClick={signIn}>{hasAccount ? "Sign In" : "Register"}</button>
+                <button className="btn btn-warning" onClick={signIn}>{hasAccount ? "Sign In" : "Register"}</button> */}
             </div>
             <img src={illustration} alt="My Happy SVG" />
         </body >

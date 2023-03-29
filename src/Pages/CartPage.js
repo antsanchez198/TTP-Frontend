@@ -49,7 +49,7 @@ export default function CartPage() {
 
   return (
     <div>
-      <h1>Shopping Cart</h1>
+      {/* <h1>Shopping Cart</h1>
 
       {cartItems.map((item) => {
         return (
@@ -65,7 +65,6 @@ export default function CartPage() {
         );
       })}
 
-      {/* bottom */}
       <div className="ms-5 ps-5 ">
         <h2>Total Price: ${total} </h2>
       </div>
@@ -73,7 +72,7 @@ export default function CartPage() {
         <button className="btn btn-primary btn-lg" type="button" onClick={checkout}>
           Checkout
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

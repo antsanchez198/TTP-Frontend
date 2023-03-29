@@ -12,20 +12,20 @@ import OrderPage from "./Pages/OrderPage";
 function App() {
   const [isLogin, setIsLogin] = useState(false);
 
-  const alreadyLogin = async () => {
-    try {
-      const response = await fetch("http://localhost:5000/is-verify", {
-        method: "GET",
-        headers: { token: localStorage.token },
-      });
+  // const alreadyLogin = async () => {
+  //   try {
+  //     const response = await fetch("http://localhost:5000/is-verify", {
+  //       method: "GET",
+  //       headers: { token: localStorage.token },
+  //     });
 
-      const data = await response.json();
-      data === true ? setIsLogin(true) : setIsLogin(false);
-      console.log(data);
-    } catch (err) {
-      console.error(err.message);
-    }
-  };
+  //     const data = await response.json();
+  //     data === true ? setIsLogin(true) : setIsLogin(false);
+  //     console.log(data);
+  //   } catch (err) {
+  //     console.error(err.message);
+  //   }
+  // };
 
   useEffect(() => {
     alreadyLogin();

@@ -37,7 +37,7 @@ function Profile(props) {
 
     return (<div>
     <h1>HELLO!!&nbsp;{Name}</h1>
-    <button className="btn btn-primary mt-2 btnLogout" onClick={Logout}>Logout</button>
+    {/* <button className="btn btn-primary mt-2 btnLogout" onClick={Logout}>Logout</button> */}
     </div>);
 }
 
