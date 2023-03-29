@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar isLogin ={isLogin}/>
+        <NavBar isLogin={isLogin} />
         <Routes>
           <Route path="/home" element={<HomePage />} />
           <Route path="/menu" element={<MenuPage />} />
@@ -45,17 +45,17 @@ function App() {
             element={
               !isLogin ? (
                 <AccountPage isLogin={isLogin} setIsLogin={setIsLogin} />
-                ) : (
-                  <Navigate to="/home" />
-                  )
-                }
+              ) : (
+                <Navigate to="/home" />
+              )
+            }
           />
           <Route path="/Profile" element={
-          isLogin?
-          <Profile  setIsLogin={setIsLogin}/>
-        :
-        <Navigate to = '/home'/>
-        } />
+            isLogin ?
+              <Profile setIsLogin={setIsLogin} />
+              :
+              <Navigate to='/home' />
+          } />
         </Routes>
       </BrowserRouter>
     </>
