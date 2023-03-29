@@ -28,7 +28,7 @@ function App() {
   // };
 
   useEffect(() => {
-    alreadyLogin();
+    // alreadyLogin();
   }, []);
 
   return (
