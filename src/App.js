@@ -36,7 +36,7 @@ function App() {
       <BrowserRouter>
         <NavBar isLogin={isLogin} />
         <Routes>
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/order" element={<OrderPage />} />
           <Route path="/cart" element={<CartPage />} />
@@ -46,7 +46,7 @@ function App() {
               !isLogin ? (
                 <AccountPage isLogin={isLogin} setIsLogin={setIsLogin} />
               ) : (
-                <Navigate to="/home" />
+                <Navigate to="/" />
               )
             }
           />
@@ -54,7 +54,7 @@ function App() {
             isLogin ?
               <Profile setIsLogin={setIsLogin} />
               :
-              <Navigate to='/home' />
+              <Navigate to='/' />
           } />
         </Routes>
       </BrowserRouter>

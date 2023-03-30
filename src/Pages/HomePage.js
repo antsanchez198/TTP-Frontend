@@ -70,7 +70,7 @@ export default function HomePage() {
             <div className="bio-paragraph">
               <h5 className="paragraph"><strong>Live Mariachis</strong></h5>
               <p>every Friday from 8pm to 11pm</p>
-              <HashLink to="/home/#contact"
+              <HashLink to="/#contact"
               ><button className="btn-lg transition">
                   Visit Us
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">

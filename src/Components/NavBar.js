@@ -19,10 +19,10 @@ export default function NavBar(props) {
 
     return (
         <ul className="navBox">
-            <Link to="/home" class="navItems active"> Home </Link>
+            <Link to="/" class="navItems active"> Home </Link>
             <Link to="/menu" class="navItems"> Menu </Link>
             <Link to="/order" class="navItems"> Order </Link>
-            <HashLink to="/home/#contact" class="navItems" smooth> Contact Us </HashLink>
+            <HashLink to="/#contact" class="navItems" smooth> Contact Us </HashLink>
             {
                 !isLogin ? <Link to="/account" class="navItems"> Account </Link> :
                     <Link to="/Profile" class="navItems"> Profile </Link>
