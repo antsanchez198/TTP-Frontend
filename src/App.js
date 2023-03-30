@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import CartPage from "./Pages/CartPage";
 import AccountPage from "./Pages/AccountPage";
-import { useState, useEffect } from "react/cjs/react.development";
+import { useState, useEffect } from "react";
 import Profile from "./Pages/Profile";
 import MenuPage from "./Pages/MenuPage";
 import OrderPage from "./Pages/OrderPage";

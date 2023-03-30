@@ -21,10 +21,6 @@ function Profile(props) {
 
     }
 
-
-
-
-
     useEffect(()=>{
         nameAPI()
     },[Name])
