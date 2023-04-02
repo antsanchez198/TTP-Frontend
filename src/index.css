@@ -21,6 +21,20 @@ body {
   --semi-dark-cream: #edead9;
 }
 
+.navbar-toggler{
+  /* background-color: green; */
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+i {
+  color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -42,6 +56,7 @@ code {
   font-size: 19px;
   z-index: 2;
   width: 100%;
+  position: relative;
 }
 
 .navItems {
