@@ -127,7 +127,8 @@ export default function HomePage() {
                   </div>
                   <div className="line"></div>
                   <h3>Address</h3>
-                  <p>805 Coney Island Ave, Brooklyn, NY</p>
+                  <p>805 Coney Island Ave</p>
+                  <p>Brooklyn, NY 11206</p>
                   <div className="line"></div>
                   <h3>Phone</h3>
                   <p>718-826-3388</p>

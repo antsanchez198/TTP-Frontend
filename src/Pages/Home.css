@@ -362,10 +362,19 @@ iframe {
     }
 
     .contact-container {
+        width: 45rem;
+    }
+
+    /* .contact-container {
         flex-direction: column;
         width: max-content;
     }
-    
+     */
+
+    .cc-inner-left {
+        flex-basis: 50%;
+    }
+
     .myborder {
         border: red 2px solid;
     }
@@ -417,6 +426,15 @@ iframe {
     .myborder {
         border: magenta 2px solid;
     }
+
+    /* .contact-container {
+        flex-direction: column;
+        width: max-content;
+    } */
+    
+    .contact-container {
+        width: 40rem;
+    }
     
     .image-container img {
         height: 18rem;
@@ -438,4 +456,11 @@ iframe {
     .bio-section-container p {
         font-size: 1.1rem;
     }
+    
+    .contact-container {
+        flex-direction: column;
+        width: 70%;
+        text-align: center;
+        margin: 2rem 0;
+    } 
 }
