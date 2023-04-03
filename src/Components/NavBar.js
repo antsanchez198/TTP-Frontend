@@ -20,10 +20,7 @@ export default function NavBar(props) {
     }, [navbarLinks])
 
     const toggleNav = () => {
-        // if (window.innerWidth < 735) {
-        //     console.log(navbarLinks, "testing")
-            navbarLinks.classList.toggle('column')
-        // }
+        navbarLinks.classList.toggle('column')
         console.log(window.innerWidth)
     }
 
