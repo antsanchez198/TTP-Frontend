@@ -28,7 +28,7 @@ export default function NavBar(props) {
     return (
         <>
             <nav class="navbar">
-                <a class="toggle-button" onClick={() => toggleNav()}>
+                <a href="#" class="toggle-button" onClick={() => toggleNav()}>
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
