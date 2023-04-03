@@ -6,7 +6,6 @@ export default function NavBar(props) {
 
     const isLogin = props.isLogin
     
-    const toggleButton = document.getElementsByClassName('toggle-button')[0]
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
     
     useEffect(() => {
@@ -21,8 +20,9 @@ export default function NavBar(props) {
     }, [navbarLinks])
 
     const toggleNav = () => {
-        if(window.innerWidth < 735){
-        navbarLinks.classList.toggle('column')
+        if (window.innerWidth < 735) {
+        //     console.log(navbarLinks, "testing")
+            navbarLinks.classList.toggle('column')
         }
     }
 
@@ -30,7 +30,7 @@ export default function NavBar(props) {
     return (
         <>
             <nav class="navbar">
-                <a href="#" class="toggle-button" onClick={() => toggleNav()}>
+                <a class="toggle-button" onClick={() => toggleNav()}>
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
