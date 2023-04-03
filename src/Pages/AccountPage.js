@@ -103,7 +103,7 @@ export default function AccountPage(props) {
 
 
     return (
-        <body className="form-section">
+        <body className="form-section myborder">
             <div className="form-container flex column center">
                 <div className='fc-header'>
                     <h1>Login</h1>
