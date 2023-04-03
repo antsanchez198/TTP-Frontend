@@ -36,7 +36,7 @@ export default function NavBar(props) {
                     <span class="bar"></span>
                 </a>
                 <div class="navbar-links">
-                    <ul className="navBox">
+                    {/* <ul className="navBox"> */}
                         <Link to="/" class="navItems active"> Home </Link>
                         <Link to="/menu" class="navItems"> Menu </Link>
                         <Link to="/order" class="navItems"> Order </Link>
@@ -46,7 +46,7 @@ export default function NavBar(props) {
                                 <Link to="/Profile" class="navItems"> Profile </Link>
                         }
                         <Link to="/cart" class="navItems right"> My Cart</Link>
-                    </ul>
+                    {/* </ul> */}
                 </div>
             </nav>
 
