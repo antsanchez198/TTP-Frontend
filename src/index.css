@@ -21,18 +21,16 @@ body {
   --semi-dark-cream: #edead9;
 }
 
-.navbar-toggler{
-  /* background-color: green; */
-  position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: none;
-}
-
-i {
-  color: white;
+.navbar-toggler {
+  background-color: green;
+  /* position: absolute;
+  top: 0;
+  left: 1;
+  bottom: 0;
+  right: 0; */
+  float: right;
+  margin: 1% 0;
+  /* display: none;/ */
 }
 
 code {
@@ -75,7 +73,8 @@ code {
 
 .navItems:hover {
   color: white;
-  cursor: pointer;;
+  cursor: pointer;
+  ;
 }
 
 .navItems::after {
@@ -100,4 +99,105 @@ code {
 
 .right {
   float: right;
+}
+
+/* New CSS */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mex-red);
+  color: white;
+  /* background-color: aqua; */
+}
+
+.navbar-links {
+  height: 100%;
+  width: 65rem;
+  margin: 0 .3rem;
+}
+
+/* .navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+} */
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 18px;
+  margin: 0 5rem;
+  /* background-color: aqua; */
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 960px){
+  .navbar-links {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .navItems::after {
+    width: 6rem;
+  }
+
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      /* text-align: center; */
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.column {
+      display: flex;
+  }
 }
