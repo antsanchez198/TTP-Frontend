@@ -103,21 +103,16 @@ export default function AccountPage(props) {
 
 
     return (
-        <body className="form-section myborder">
-            <div className="form-container flex column center">
-                <div className='fc-header'>
+        <div className="form-section myborder">
+            <div className="form-container flex center column">
                     <h1>Login</h1>
                     {hasAccount ? <h6>Don't Have an Account? <a className="registerHere" onClick={() => setHasAccount(!hasAccount)}>Sign Up</a></h6> : <h6>Already have an Account?<a className="registerHere" onClick={() => setHasAccount(!hasAccount)}>Log In</a></h6>}
-                </div>
-
-                <div className='fc-body flex column'>
-                        {hasAccount ? <></> : <input placeholder="Name" className="inputBox" onChange={onchangeName}></input>}
-                        <input placeholder="Email" className="inputBox" onChange={onchangeEmail}></input>
-                        <input type="password" placeholder="Password" className="inputBox" onChange={onchangePassword}></input>
-                </div>
-                <button className="btn btn-warning" onClick={signIn}>{hasAccount ? "Sign In" : "Register"}</button>
+                        
+                    {hasAccount ? <></> : <input placeholder="Name" className="inputBox" onChange={onchangeName}></input>}
+                    <input placeholder="Email" className="inputBox" onChange={onchangeEmail}></input>
+                    <input type="password" placeholder="Password" className="inputBox" onChange={onchangePassword}></input>
+                    <button className="btn btn-warning" onClick={signIn}>{hasAccount ? "Sign In" : "Register"}</button>
             </div>
-            <img src={illustration} alt="My Happy SVG" />
-        </body >
+        </div >
     )
 }

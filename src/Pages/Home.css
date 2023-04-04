@@ -79,8 +79,6 @@ body {
     cursor: pointer;
 }
 
-/* Title Section */
-
 /* Preview Section */
 .preview {
     background: url("../images/tinga.JPG");
@@ -246,6 +244,7 @@ svg {
     background: var(--cream);
     display: flex;
     border-radius: 1rem;
+    font-family: 'Poppins';
 }
 
 .cc-inner-left {
@@ -296,7 +295,7 @@ iframe {
 }
 
 .line {
-    height: 0.12rem;
+    height: 2px;
     /* background-color: #9e9591; */
     background-color: var(--mex-red);
     width: 100%;
@@ -378,7 +377,7 @@ iframe {
     }
 
     .myborder {
-        border: red 2px solid;
+        /* border: red 2px solid; */
     }
 }
 
@@ -410,9 +409,11 @@ iframe {
     }
 
     .myborder {
-        border: green 2px solid;
+        /* border: green 2px solid; */
     }
 }
+
+
 
 @media (max-width: 768px) {
     .title-section img {
@@ -432,13 +433,8 @@ iframe {
     }
 
     .myborder {
-        border: magenta 2px solid;
+        /* border: magenta 2px solid; */
     }
-
-    /* .contact-container {
-        flex-direction: column;
-        width: max-content;
-    } */
 
     .contact-container {
         width: 40rem;
@@ -492,7 +488,7 @@ iframe {
     }
 
     .contact-container {
-        width: 90%;
+        width: 80%;
     }
 
     .button-container button {
@@ -507,6 +503,23 @@ iframe {
     }
 
     .myborder {
-        border: blue 2px solid;
+        /* border: blue 2px solid; */
+    }
+
+    .preview, .contact-section {
+        background-size: cover;
+    }
+
+    .para-container {
+        font-size: .8rem;
+    }
+
+    .cc-inner-left h1 {
+        font-size: 3rem;
+    }
+
+    .line {
+        width: 80%;
+        margin: 0 auto;
     }
 }
