@@ -103,7 +103,7 @@ export default function AccountPage(props) {
 
 
     return (
-        <div className="form-section myborder">
+        <div className="form-section myborder topPadding">
             <div className="form-container flex center column">
                     <h1>Login</h1>
                     {hasAccount ? <h6>Don't Have an Account? <a className="registerHere" onClick={() => setHasAccount(!hasAccount)}>Sign Up</a></h6> : <h6>Already have an Account?<a className="registerHere" onClick={() => setHasAccount(!hasAccount)}>Log In</a></h6>}

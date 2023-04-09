@@ -42,7 +42,7 @@ export default function HomePage() {
   return (
     <div>
       <body>
-        <section className="title-section myborder center">
+        <section className="title-section myborder center topPadding">
           <div className="left">
             <h1><strong>Los Mariachis Mexican Restaurant</strong></h1>
             <div className="button-container flex">

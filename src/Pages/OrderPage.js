@@ -21,8 +21,19 @@ export default function OrderPage() {
       }
   }
 
+  const test = async () => {
+    try {
+        const response = await fetch(`https://fetch-foods.free.beeceptor.com/foods/`);
+        const jsonData = await response.json();
+        console.log(jsonData, "bee API")
+    } catch (err) {
+        console.error(err);
+    }
+}
+
   useEffect(()=>{
       fetchFoodData()
+      test()
   },[type])
 
   console.log(type)

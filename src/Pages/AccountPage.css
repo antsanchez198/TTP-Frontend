@@ -87,6 +87,6 @@ body {
    .form-container button {
     width: 10rem;
     border-radius: 25rem;
-    border: rgb(34, 33, 33) 2px solid;
+    /* border: rgb(34, 33, 33) 2px solid; */
   }
  }

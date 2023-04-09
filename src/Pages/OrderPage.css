@@ -118,3 +118,9 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+@media (max-width: 735px) {
+    .order-page {
+        padding-top: 3.5rem;
+    }
+}
